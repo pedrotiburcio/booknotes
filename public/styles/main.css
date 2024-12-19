@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f7d794;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 16px auto;
+    font-size: 48px;    
+    text-align: center;
+}
+
+.description {
+    margin: 64px auto;
+    font-size: 24px;
+}
+
+.description a {
+    text-decoration: none;
+    color: #778beb;
+}
+
+.books-list {
+    margin: 30px auto;
+    padding: 0px 48px;
+}
+
+.book {
+    display: flex;
+    list-style: none;
+    margin-bottom: 32px;
+    padding: 16px;
+    background-color: #778beb;
+    border-radius: 8px;
+}
+
+.book-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 16px;
+}
+
+.book-infos span {
+    font-weight: bold;
+}
+
+.main-infos h2, .main-infos h3 {
+    color: #283568;
+}
+
+.secondary-infos p {
+    margin-top: 16px;
+    text-align: justify;
+    color: #1c2024;
+}

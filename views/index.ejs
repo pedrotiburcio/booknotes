@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Notes</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Top Books</h1>
+        <p class="description">Hello! Welcome to my list of books read. I hope you enjoy the readings and all the learning that each book offers. It's possible to filter the books by <a href="/">publication date</a>, by <a href="/rating">rating</a> and by <a href="/title">title</a>. Happy reading!</p>
+        <% if (locals.books) { %>
+            <ul class="books-list">
+                <% books.forEach(book => { %>
+                    <li class="book">
+                        <img src=<%= book.src %> alt= <%= book.title %>>
+                        <div class="book-infos">
+                            <div class="main-infos">
+                                <h2><%= book.title %></h2>
+                                <h3>By <%= book.author %></h3>
+                            </div>
+                            <div class="secondary-infos">
+                                <p><span>Summary:</span> <%= book.summary %></p>
+                                <p><span>Notes:</span> <%= book.notes %></p>
+                                <p><span>Rating:</span> <%= book.rating %></p>
+                            </div>
+                        </div>
+                    </li>
+                <% }) %>
+            </ul>
+        <% } %>
+    </div>
+</body>
+</html>
