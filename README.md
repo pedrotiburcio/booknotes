@@ -1,7 +1,5 @@
 # Book Notes
 
-**Link:** https://items-generator-pedroat.onrender.com/
-
 ## English:
 
 "Book Notes" is an application that consists of a list of the main books I've read, with information such as title, author, summary, and a rating assessing the quality of the book.
